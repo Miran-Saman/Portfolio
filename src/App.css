@@ -1,0 +1,44 @@
+body, html{
+  margin: 0px;
+  height: 100%;
+}
+#root{
+  height: 100%;
+}
+.App{
+  height: 100%;
+  display: flex;
+}
+.LeftBar {
+  width: 27.778%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  position: fixed;
+  height: 100%;
+
+}
+.manu-bar{
+  width: 180px;
+}
+.manu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.manu-text{
+  text-decoration: none;
+  cursor: pointer;
+  margin: 7px 0px;
+  color: #777;
+  transition: .3s;
+}
+.manu-text:hover {
+  color: black;
+  letter-spacing: 3.5px;
+}
+.push{
+  margin-right: 27.8%;
+}
