@@ -1,14 +1,14 @@
 import './App.css';
-import Home from "./components/home"
+import Home from "./components/home/home"
 import React, { useState, useEffect } from 'react';
 import Portfolio from './components/portfolio';
-import About from './components/about';
+import About from './components/about/about';
 import News from './components/news';
 import Contacts from './components/contacts';
 
 function App() {
-  
-  const [room, setRoom] = useState(null)
+
+  const [room, setRoom] = useState(<Home/>)
   
   return (
     <div className="App">
@@ -25,7 +25,9 @@ function App() {
         </div>
       </div>
       <div className="push"></div>
-      <div>{room}</div>
+      <div className="rooms">
+        {room}
+      </div>
     </div>
   );
 }
