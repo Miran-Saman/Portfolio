@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./news.css"
 
 function News(props) {
     return (

@@ -1,10 +1,10 @@
 import './App.css';
 import Home from "./components/home/home"
 import React, { useState, useEffect } from 'react';
-import Portfolio from './components/portfolio';
+import Portfolio from './components/portfolio/portfolio';
 import About from './components/about/about';
-import News from './components/news';
-import Contacts from './components/contacts';
+import News from './components/news/news';
+import Contacts from './components/contact/contact';
 
 function App() {
 
