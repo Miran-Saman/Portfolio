@@ -10,14 +10,14 @@ import Available from "./available"
 
 function Home() {
     const [isAvailable,setIsAvailable] = useState(false)
-
+    var size = 75 - HomeStrage.name.length
     setTimeout(()=> isAvailable && setIsAvailable(false), 3000);
 
     return (
         <div className="home">
             <img className="image" src="" alt="" /> 
             <div className="details">
-                <p style={{fontSize : HomeStrage.name.length > 11 && 55}} className="name">
+                <p style={{fontSize : size}} className="name">
                     {HomeStrage.name}
                 </p>
                 <p className="job">
