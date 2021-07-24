@@ -1,27 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import "./home.css"
-import FaceBook from "./facebook-img.svg"
-import Twitter from "./twitter-img.svg"
-import Instagram from"./instagram-img.svg"
-import Dirbbble from "./dribbble-img.svg"
+import FaceBook from "./logo/facebook-img.svg"
+import Twitter from "./logo/twitter-img.svg"
+import Instagram from"./logo/instagram-img.svg"
+import Dirbbble from "./logo/dribbble-img.svg"
 import HomeStrage from "../storage"
+import Available from "./available"
 
-function Available(props){
-
-    if (props.link === "" && props.clicked ){
-        return (
-            <div className="isAvailable">
-                <p className="string">
-                    It's unavailable now
-                </p>
-            </div>
-        );
-    } else {
-        return (
-            <img src={props.logo} alt="" className="svg"/>
-        );
-    }
-}
 
 function Home() {
     const [isAvailable,setIsAvailable] = useState(false)
