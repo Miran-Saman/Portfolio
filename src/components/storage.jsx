@@ -1,4 +1,4 @@
-const HomeStrage = {
+const HomeStorage = {
     name : "MIRAN SAMAN",
     job : "Develper based in KURDISTAN",
     FaceBookLink : "https://www.facebook.com/miran.saman.1612/",
@@ -7,4 +7,4 @@ const HomeStrage = {
     DirbbbleLink:""
 }
 
-export default HomeStrage
+export default HomeStorage
