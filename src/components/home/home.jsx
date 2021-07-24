@@ -4,11 +4,12 @@ import FaceBook from "./logo/facebook-img.svg"
 import Twitter from "./logo/twitter-img.svg"
 import Instagram from"./logo/instagram-img.svg"
 import Dirbbble from "./logo/dribbble-img.svg"
-import HomeStorage from "../storage"
+import Storage from "../storage"
 import Available from "./available"
 
 
 function Home() {
+    const HomeStorage = Storage.HomeStorage
     const [isAvailable,setIsAvailable] = useState(false)
     var size = 75 - HomeStorage.name.length
     setTimeout(()=> isAvailable && setIsAvailable(false), 3000);

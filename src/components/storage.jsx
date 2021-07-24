@@ -1,10 +1,12 @@
-const HomeStorage = {
-    name : "MIRAN SAMAN",
-    job : "Develper based in KURDISTAN",
-    FaceBookLink : "https://www.facebook.com/miran.saman.1612/",
-    TwitterLink : "",
-    InstagramLink : "",
-    DirbbbleLink:""
+const Storage = { 
+    HomeStorage: {
+        name : "MIRAN SAMAN",
+        job : "Develper based in KURDISTAN",
+        FaceBookLink : "https://www.facebook.com/miran.saman.1612/",
+        TwitterLink : "",
+        InstagramLink : "",
+        DirbbbleLink:""
+    }
 }
 
-export default HomeStorage
+export default Storage
