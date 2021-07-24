@@ -1,0 +1,84 @@
+.home {
+    width: 84.642%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.image {
+    min-width: 280px;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 40% 30%;
+    border-bottom-right-radius: 30% 70%;
+    border-bottom-left-radius: 70% 40%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.247);
+    border-image: initial;
+    animation: 7s ease-in-out 0s infinite normal none running border-image;
+    margin: 0px 30px;
+}
+@keyframes border-image {
+    50%{border-top-left-radius: 40% 30%;
+      border-top-right-radius: 60%;
+      border-bottom-right-radius: 70% 40%;
+      border-bottom-left-radius: 30% 70%}
+}
+.details{
+    padding-top: 80px;
+    margin: 0px 15px;
+}
+.name{
+    font-weight: 900;
+    font-size: 64px;
+    margin-bottom: 36px;
+    display: inline;
+} 
+.job{
+    color: #666;
+    font-style: italic;
+    margin-bottom: 40px;
+    margin-left: 3px;
+}
+.social{
+    display: flex;
+}
+.svg {
+    block-size: 16px;
+    transition: .16s;
+    margin: 0px 8px;
+}
+.svg:hover {
+    opacity: 60%;
+} 
+.isAvailable{
+    border: solid #ccc;
+    border-radius: 10px;
+    height: 17px;
+    font-size: 15px;
+    margin: 3px 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 4px;
+    color: white;
+    background-color: #ccc;
+    transition: 2s;
+    width: 32px;
+    overflow: hidden;
+    animation: isAvailableAnimation 3s ;
+}
+@keyframes  isAvailableAnimation{
+    20% {
+        width: 169px;
+    }
+    80% {
+        width: 169px;
+        opacity: 1;
+    }
+    100% {
+        width: 20px;
+        opacity: 0%;
+    }
+}
+.string {
+    min-width: 180px;
+}
