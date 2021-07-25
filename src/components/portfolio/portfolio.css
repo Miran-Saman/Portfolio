@@ -1,0 +1,55 @@
+.portfolio{
+    margin: 100px 20px;
+    width: 84.641%;
+    height: fit-content;
+}
+.title-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 60px;
+    height: 110px;
+}
+.Pportfolio{
+    margin: 0px 0px;
+}
+.Box-flex {
+    display: flex;
+    gap: 20px;
+}
+.Box {
+    color: #767676;
+    font-size: 15px;
+    margin: 0px 15px 0px 0px;
+    transition: .23s;
+    cursor: pointer;
+}
+.Box:hover {
+    letter-spacing: 3.5px ;
+    color: black
+}
+.portfolio-images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.bord {
+    width: 47.17%;
+    min-width: 307px;
+    max-width: 415px;
+}
+.border-of-picture {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.setting-picture {
+    height: 415px;
+    width: 100%;
+    border-radius: 10px;
+    transition: .62s;
+    object-fit: cover;
+}

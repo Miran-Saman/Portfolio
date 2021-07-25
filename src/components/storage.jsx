@@ -21,7 +21,32 @@ const Storage = {
             {name : "address", p1 : "study:", p2 : "Slemany high school"},
             {name : "address", p1 : "Freelance:", p2 : "available"},
         ]
-    }
+    },
+    ProtfolioStorage: [
+        {manu : "all", index : [
+            "images/angelina-herbert-4H8AY8Fn9X8-unsplash.jpg",
+            "images/johannes-mandle-yCB5NooB86o-unsplash.jpg",
+            "images/john-jason-mpVZVCClgac-unsplash.jpg",
+            "images/lucas-d-J8apNy3rmKE-unsplash.jpg",
+            "images/matthew-deblieux-Q5EIdxuEVaU-unsplash.jpg"
+        ]},
+        {manu : "Ui/Ux", index : [
+            "images/john-jason-mpVZVCClgac-unsplash.jpg",
+            "images/matthew-deblieux-Q5EIdxuEVaU-unsplash.jpg"
+        ]},
+        {manu : "Website",index : [
+            "images/johannes-mandle-yCB5NooB86o-unsplash.jpg",
+            "images/lucas-d-J8apNy3rmKE-unsplash.jpg"
+        ]},
+        {manu : "program", index : [
+            "images/matthew-deblieux-Q5EIdxuEVaU-unsplash.jpg",
+            "images/angelina-herbert-4H8AY8Fn9X8-unsplash.jpg"
+        ]},
+        {manu : "creative", index : [
+            "images/johannes-mandle-yCB5NooB86o-unsplash.jpg",
+            "images/lucas-d-J8apNy3rmKE-unsplash.jpg"
+        ]}
+    ]
 }
 
 export default Storage
