@@ -16,7 +16,7 @@ function Home() {
 
     return (
         <div className="home">
-            <img className="image" src="" alt="" /> 
+            <img className="image" src={HomeStorage.image} alt="" /> 
             <div className="details">
                 <p style={{fontSize : size}} className="name">
                     {HomeStorage.name}

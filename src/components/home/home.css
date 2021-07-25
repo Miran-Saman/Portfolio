@@ -2,12 +2,10 @@
     width: 84.642%;
     height: 300px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 950px;
 }
 .image {
-    min-width: 280px;
+    width: 280px;
     border-top-left-radius: 60%;
     border-top-right-radius: 40% 30%;
     border-bottom-right-radius: 30% 70%;
@@ -18,7 +16,6 @@
     border-image: initial;
     animation: 7s ease-in-out 0s infinite normal none running border-image;
     margin: 0px 30px;
-    min-height: 284px;
 }
 @keyframes border-image {
     50%{border-top-left-radius: 40% 30%;
