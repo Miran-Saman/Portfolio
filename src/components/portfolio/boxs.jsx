@@ -1,8 +1,8 @@
 import Storage from "../storage"
 
-function Five() {
+function Boxs(props) {
     const ProtfolioStorage = Storage.ProtfolioStorage;
-    const lists = ProtfolioStorage[4].index.map((number)=>
+    const lists = ProtfolioStorage[props.number].index.map((number)=>
     <div className="bord">
         <div className="border-of-picture">
             <img src={number} alt="" className="setting-picture"/>
@@ -11,5 +11,4 @@ function Five() {
     )
     return lists
 }
-
-export default Five
+export default Boxs
