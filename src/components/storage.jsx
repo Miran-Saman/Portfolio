@@ -9,6 +9,7 @@ const Storage = {
         DirbbbleLink:""
     },
     AboutStorage: {
+        image:"images/phonepicutres-TA.jpeg",
         director: "Miran saman",
         shortDescription: "Hello, I am a programmer in slemany and happy to create a big program",
         address : [

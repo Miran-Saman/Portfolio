@@ -18,7 +18,7 @@ function About(props) {
     )
     return (
         <div className="about">
-            <img src="" className="image-about"/>
+            <img src={AboutStorage.image} className="image-about"/>
             <h1 className="director">{AboutStorage.director}</h1>
             <div className="description">
                 <div className="short-description">{AboutStorage.shortDescription}</div>
