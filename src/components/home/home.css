@@ -3,6 +3,7 @@
     height: 300px;
     display: flex;
     justify-content: space-between;
+    max-width: 930px;
 }
 .image {
     width: 280px;

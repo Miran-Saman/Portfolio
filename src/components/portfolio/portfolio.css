@@ -2,6 +2,7 @@
     margin: 100px 20px;
     width: 84.641%;
     height: fit-content;
+    max-width: 1338px;
 }
 .title-flex{
     display: flex;
@@ -32,9 +33,10 @@
 }
 .portfolio-images{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-content: space-around;
+    column-gap: 40px;
 }
 .bord {
     width: 47.17%;
@@ -45,6 +47,7 @@
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 40px;
+    height: 415px;
 }
 .setting-picture {
     height: 415px;
@@ -52,4 +55,7 @@
     border-radius: 10px;
     transition: .62s;
     object-fit: cover;
+}
+.setting-picture:hover{
+    transform: scale(1.09);
 }
