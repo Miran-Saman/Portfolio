@@ -1,7 +1,7 @@
 const Storage = { 
     HomeStorage: {
         name : "MIRAN SAMAN",
-        job : "Develper based in KURDISTAN",
+        job : "Developer based in KURDISTAN",
         image : "images/phonepicutres-TA.jpeg",
         FaceBookLink : "https://www.facebook.com/miran.saman.1612/",
         TwitterLink : "",
