@@ -1,6 +1,6 @@
 import About from "./about/about"
 import Contacts from "./contact/contact"
-import Home from "./home/home"
+import Home from "../components/home/home"
 import News from "./news/news"
 import Portfolio from "./portfolio/portfolio"
 
