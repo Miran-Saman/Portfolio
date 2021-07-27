@@ -13,6 +13,7 @@ function App() {
   
   return (
     <div className="App">
+      <div id ="rendering"/>
       <div className="LeftBar">
         <div className="manu-bar">
           <h2>

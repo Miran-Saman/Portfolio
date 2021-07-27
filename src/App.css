@@ -74,3 +74,33 @@ body, html{
   letter-spacing: 0px;
   font-size: 30px;
 }
+.display {
+  height: 101%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.678);
+  color: white;
+  z-index: 1;
+  animation-name: open ;
+  animation-duration: .4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@keyframes open{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes close{
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+.image-display {
+  block-size: 70%;
+}
+.images-display {
+  height: 80px;
+  margin: 0px 1px;
+}
