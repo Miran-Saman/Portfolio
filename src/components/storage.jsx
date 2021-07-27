@@ -64,29 +64,64 @@ const Storage = {
         ]
     },
     ProtfolioStorage: [
-        {manu : "all", index : [
+        {
+            manu : "all",
+            index : [
             "images/angelina-herbert-4H8AY8Fn9X8-unsplash.jpg",
             "images/johannes-mandle-yCB5NooB86o-unsplash.jpg",
             "images/john-jason-mpVZVCClgac-unsplash.jpg",
             "images/lucas-d-J8apNy3rmKE-unsplash.jpg",
             "images/matthew-deblieux-Q5EIdxuEVaU-unsplash.jpg"
-        ]},
-        {manu : "Ui/Ux", index : [
+            ]
+        },
+        {
+            manu : "Ui/Ux", 
+            index : [
             "images/john-jason-mpVZVCClgac-unsplash.jpg",
             "images/matthew-deblieux-Q5EIdxuEVaU-unsplash.jpg"
-        ]},
-        {manu : "Website",index : [
+            ]
+        },
+        {
+            manu : "Website",
+            index : [
             "images/johannes-mandle-yCB5NooB86o-unsplash.jpg",
             "images/lucas-d-J8apNy3rmKE-unsplash.jpg"
-        ]},
-        {manu : "program", index : [
+            ]
+        },
+        {
+            manu : "program", 
+            index : [
             "images/matthew-deblieux-Q5EIdxuEVaU-unsplash.jpg",
             "images/angelina-herbert-4H8AY8Fn9X8-unsplash.jpg"
-        ]},
-        {manu : "creative", index : [
+            ]
+        },
+        {
+            manu : "creative",
+            index : [
             "images/johannes-mandle-yCB5NooB86o-unsplash.jpg",
             "images/lucas-d-J8apNy3rmKE-unsplash.jpg"
-        ]}
+            ]
+        }
+    ],
+    NewsStorage : [
+        {
+            image : "images/istockphoto-1225837096-612x612.jpeg",
+            creator : "",
+            date : Date(),
+            header : ""
+        },
+        {
+            image : "images/china-in-pictures-beautiful-places-to-photograph-the-great-wall.jpeg",
+            creator : "",
+            date : Date (),
+            header : ""
+        },
+        {
+            image : "images/4u77zbl6zvt51.jpeg",
+            creator : "--",
+            date : Date (),
+            header : "--"
+        },
     ]
 }
 
