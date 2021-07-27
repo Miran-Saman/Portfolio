@@ -1,13 +1,54 @@
+import About from "./about/about"
+import Contacts from "./contact/contact"
+import Home from "./home/home"
+import News from "./news/news"
+import Portfolio from "./portfolio/portfolio"
+
 const Storage = { 
+    LeftBarStorage : [
+        {
+            name: "Home",
+            component: <Home/>,
+        },
+        {
+            name: "About",
+            component: <About/>
+        },
+        {
+            name: "Portfolio",
+            component: <Portfolio/>
+        },
+        {
+            name: "News",
+            component: <News/>
+        },
+        {
+           name:"Contact",
+           component: <Contacts/>
+        },
+    ],
     HomeStorage: {
         name : "MIRAN SAMAN",
         job : "Developer based in KURDISTAN",
         image : "images/phonepicutres-TA.jpeg",
-        FaceBookLink : "https://www.facebook.com/miran.saman.1612/",
-        TwitterLink : "",
-        InstagramLink : "",
-        DirbbbleLink:""
-    },
+        social : [
+            {
+                name : "FaceBook",
+                link : "https://www.facebook.com/miran.saman.1612/"
+            },
+            {
+                name : "Twitter",
+                link : ""
+            },
+            {
+                name : "InstagramL",
+                link : ""
+            },
+            {
+                name : "Dirbbble",
+                link : ""
+            },
+        ]},
     AboutStorage: {
         image:"images/phonepicutres-TA.jpeg",
         director: "Miran saman",

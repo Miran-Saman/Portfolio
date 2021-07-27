@@ -5,10 +5,16 @@ import Portfolio from './components/portfolio/portfolio';
 import About from './components/about/about';
 import News from './components/news/news';
 import Contacts from './components/contact/contact';
+import Storage from "./components/storage"
 
 function App() {
 
   const [room, setRoom] = useState(<Home/>)
+  const manuRender = Storage.LeftBarStorage.map((item)=> 
+  <div className="manu-text" onClick={()=> setRoom(item.component)}>
+    {item.name}
+  </div>
+  )
   
   return (
     <div className="App">
@@ -18,21 +24,9 @@ function App() {
             Kurdistan
             </h2>
           <div className="manu">
-            <div className="manu-text" onClick={()=> setRoom(<Home/>)}>
-              Home
-              </div>
-            <div className="manu-text" onClick={()=> setRoom(<About/>)}>
-              About
-              </div>
-            <div className="manu-text" onClick={()=> setRoom(<Portfolio/>)}>
-              Portfolio
-              </div>
-            <div className="manu-text" onClick={()=> setRoom(<News/>)}>
-              News
-              </div>
-            <div className="manu-text" onClick={()=> setRoom(<Contacts/>)}>
-              Contacts
-              </div>
+            {
+              manuRender
+            }
           </div>
         </div>
       </div>

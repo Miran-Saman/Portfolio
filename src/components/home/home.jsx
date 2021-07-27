@@ -9,10 +9,20 @@ import Available from "./available"
 
 
 function Home() {
+    const logo = [FaceBook,Twitter,Instagram,Dirbbble]
     const HomeStorage = Storage.HomeStorage
     const [isAvailable,setIsAvailable] = useState(false)
-    var size = 75 - HomeStorage.name.length
-    setTimeout(()=> isAvailable && setIsAvailable(false), 3000);
+    var size = 75 - HomeStorage.name.length;
+    
+    const socialRender = HomeStorage.social.map((item , i)=> 
+        <a onClick={() => setIsAvailable(item.name)} href={!item.link ? null : item.link}>
+            <Available clicked={isAvailable === item.name} link={item.link} logo={logo[i]}/>
+        </a>
+    )
+
+    useEffect (()=> {
+        setTimeout(()=> isAvailable && setIsAvailable(false), 3000);
+    })
 
     return (
         <div className="home">
@@ -25,18 +35,9 @@ function Home() {
                     {HomeStorage.job}
                 </p>
                 <p className="social">
-                    <a onClick={() => setIsAvailable("facebook")} href={!HomeStorage.FaceBookLink ? null : HomeStorage.FaceBookLink}>
-                        <Available clicked={isAvailable === "facebook"} link={HomeStorage.FaceBookLink} logo={FaceBook}/>
-                    </a>
-                    <a onClick={() => setIsAvailable("twitter")} href={!HomeStorage.TwitterLink ? null :HomeStorage.TwitterLink }>
-                        <Available clicked={isAvailable === "twitter"} link={HomeStorage.TwitterLink} logo={Twitter}/>
-                    </a>
-                    <a onClick={() => setIsAvailable("instagram")} href={!HomeStorage.InstagramLink ? null : HomeStorage.InstagramLink}>
-                        <Available clicked={isAvailable === "instagram"} link={HomeStorage.InstagramLink} logo={Instagram}/>
-                    </a>
-                    <a onClick={() => setIsAvailable("dirbbble")} href={!HomeStorage.DirbbbleLink ? null : HomeStorage.DirbbbleLink}>
-                        <Available clicked={isAvailable === "dirbbble"} link={HomeStorage.DirbbbleLink} logo={Dirbbble}/>
-                    </a>
+                    {
+                        socialRender
+                    }
                 </p>
             </div>
         </div>
