@@ -6,6 +6,8 @@ import Storage from "../storage"
 import "./news.css"
 import reactDom from 'react-dom';
 
+var moment = require("moment")
+
 function Open(props) {
     return (
         <div className="display">
@@ -28,7 +30,7 @@ function News(props) {
             </div>
             <div className="set-description">
                 <div className="creator">
-                    {item.creator} / {item.date}
+                    {item.creator} / {moment(item.date).format('LTS')}
                 </div>
                 <div className="line"></div>
             </div>
