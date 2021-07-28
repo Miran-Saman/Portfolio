@@ -54,3 +54,13 @@
 .line {
     border-top: solid .1px #767676;
 }
+.display-border {
+    width: 67.23%;
+    height: 75%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
