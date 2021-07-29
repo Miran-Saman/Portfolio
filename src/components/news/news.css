@@ -1,11 +1,13 @@
 .News {
     width: 84.642%;
-    height: 80%;
+    height: 80%;    
+    margin: 70px 0px;
 }
 .flexer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    column-gap: 2%;
 }
 .bord {
     width: 45.2%;
@@ -38,6 +40,9 @@
     object-fit: cover;
     transition: all 0.62s ease 0s;
 }
+.fix-image :hover{
+    transform: scale(1.09);
+}
 .set-description {
     height: 156px;
     background-color: white;
@@ -63,4 +68,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.modal-flex{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 25px;
+}
+.open-image {
+    height: 560px;
 }
