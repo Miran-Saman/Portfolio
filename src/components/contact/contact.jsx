@@ -2,6 +2,7 @@ import React, { useState, useEffect, Component } from 'react';
 import Strong from '../strong';
 import Title from '../title';
 import "./contact.css"
+import Storage from "../storage"
 
 
 class constact extends Component {
@@ -27,7 +28,14 @@ class constact extends Component {
                 tof : true
             })
         } else {
-            console.log("send it") 
+            Storage.constats.push(
+                {
+                    name : this.state.name, 
+                    mail : this.state.mail,
+                    message : this.state.message
+                }
+            )
+            console.log(Storage.constats) 
         }
     }
 
@@ -62,7 +70,6 @@ class constact extends Component {
         />    
     ) ;
 
-    console.log(this.state.message)
         return ( 
             <div className="contact">
                 <Title value={"contact"}/> 
@@ -72,6 +79,7 @@ class constact extends Component {
                     inputRender
                 }
                 <button onClick={this.handleClick}>Send</button>
+                <button onClick={() => Storage.constats.map(item => item.name === "elham" && console.log(true))}>find</button>
             </div>
          );
     }
