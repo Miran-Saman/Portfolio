@@ -79,7 +79,6 @@ class constact extends Component {
                     inputRender
                 }
                 <button onClick={this.handleClick}>Send</button>
-                <button onClick={() => Storage.constats.map(item => item.name === "elham" && console.log(true))}>find</button>
             </div>
          );
     }
