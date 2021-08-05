@@ -5,6 +5,7 @@ import News from "./news/news"
 import Portfolio from "./portfolio/portfolio"
 
 const Storage = { 
+    country : "kurdistan",
     LeftBarStorage : [
         {
             name: "Home",
@@ -122,9 +123,6 @@ const Storage = {
             date : Date (),
             header : "--"
         },
-    ],
-    constats :[
-
     ]
 }
 

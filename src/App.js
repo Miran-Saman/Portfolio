@@ -16,8 +16,10 @@ function App() {
       <div id ="rendering"/>
       <div className="LeftBar">
         <div className="manu-bar">
-          <h2>
-            Kurdistan
+          <h2 className="country">
+            {
+              Storage.country
+            }
             </h2>
           <div className="manu">
             {

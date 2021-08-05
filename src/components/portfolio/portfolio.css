@@ -59,3 +59,17 @@
 .setting-picture:hover{
     transform: scale(1.09);
 }
+.flexer-display-images {
+    position: absolute;
+    bottom: 1%;
+    block-size: 20%;
+    max-height: 99px;
+}
+.display-image {
+    block-size: 74%;
+    position: absolute;
+    bottom: 24%;
+}
+.display-images{
+    height: 100%;
+}

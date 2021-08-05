@@ -28,6 +28,9 @@ body, html{
 .manu-bar{
   width: 180px;
 }
+.country{
+  text-transform: uppercase;
+}
 .manu{
   display: flex;
   flex-direction: column;
